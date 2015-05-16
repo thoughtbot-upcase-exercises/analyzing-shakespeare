@@ -4,13 +4,16 @@ require "speech"
 
 class MacbethAnalyzer
   MACBETH_URL = "http://www.ibiblio.org/xml/examples/shakespeare/macbeth.xml"
+  IGNORE_SPEAKERS = %w(ALL)
 
   def analyze
-    results = {}
+    results = Hash.new(0)
     each_speech_element do |speech_element|
       speech = Speech.new(speech_element)
-      results[speech.speaker] ||= 0
-      results[speech.speaker] += speech.lines.count
+
+      if !IGNORE_SPEAKERS.include?(speech.speaker)
+        results[speech.speaker] += speech.lines.count
+      end
     end
     results
   end

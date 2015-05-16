@@ -16,6 +16,7 @@ describe MacbethAnalyzer do
       expect(results["MACBETH"]).to eq(719)
       expect(results["BANQUO"]).to eq(113)
       expect(results["DUNCAN"]).to eq(70)
+      expect(results["ALL"]).to be_zero
     end
   end
 end
