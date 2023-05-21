@@ -16,10 +16,6 @@ describe MacbethAnalyzer do
 
 
   it '#text_downloader downloads text of Macbeth' do
-    
-    # uri = URI('http://www.ibiblio.org/xml/examples/shakespeare/macbeth.xml')
-
-    # response = Net::HTTP.get(uri)
     response = MacbethAnalyzer.new.text_downloader
     expected_file = Nokogiri::XML(File.read("#{RSPEC_ROOT}/support/fixtures/files/macbeth.xml"))
 

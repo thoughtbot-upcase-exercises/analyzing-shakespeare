@@ -2,17 +2,6 @@ require "http"
 require "nokogiri"
 
 class MacbethAnalyzer
-  # Write a command-line program that prints the number of 
-  # lines spoken by each character in the play.
-
-  # http://www.ibiblio.org/xml/examples/shakespeare/macbeth.xml. 
-  # Your program should download and parse this file at runtime.
-
-  # ruby macbeth_analyzer.rb
-  #     543 Macbeth
-  #     345 Banquo
-  #     220 Duncan
-  #     (etc.)
   attr_reader :text
 
   def initialize
