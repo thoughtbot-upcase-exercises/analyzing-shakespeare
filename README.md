@@ -1,3 +1,8 @@
+This is a fork of Analyzing Shakespear challenge from thoughtbot [Ruby Challenges](https://thoughtbot.com/upcase/ruby-challenges) course. My solution is presented in the `solution-branch` branch.
+
+--------------------------------------------
+
+
 # Ruby Challenges / Analyzing Shakespeare
 
 Hey there! We're [thoughtbot](https://thoughtbot.com), a design and
