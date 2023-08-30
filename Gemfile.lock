@@ -18,6 +18,10 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw-ucrt
 
 DEPENDENCIES
   rspec
+
+BUNDLED WITH
+   2.4.10
