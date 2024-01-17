@@ -1,3 +1,11 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "rspec"
+source 'https://rubygems.org'
+
+gem 'faraday'
+gem 'nokogiri'
+gem 'pry'
+gem 'rspec'
+gem 'rubocop'
+gem 'simplecov'
+gem 'webmock'
